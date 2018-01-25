@@ -3,8 +3,6 @@
 
 #define TMap std::map
 
-using FString = std::string;
-
 FBullCowGame::FBullCowGame() {}
 
 int32 FBullCowGame::GetCurrentTry() const { return MyCurrentTry; }
@@ -22,9 +20,9 @@ bool FBullCowGame::IsIsogram(FString Word) const
 	if (Word.length() <= 1)
 		return true;
 
-	TMap<char, bool> LetterSeen;
+	TMap<wchar_t, bool> LetterSeen;
 
-	for (char Letter : Word)
+	for (wchar_t Letter : Word)
 	{
 		Letter = tolower(Letter);
 

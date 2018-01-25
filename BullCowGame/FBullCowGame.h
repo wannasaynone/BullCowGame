@@ -1,10 +1,10 @@
-#pragma once
+Ôªø#pragma once
 #include <string>
 
 using FString = std::string;
 using int32 = int;
 
-// πw≥]¨∞0
+// È†êË®≠ÁÇ∫0
 struct FBullCowCount
 {
 	int32 Bulls = 0;
